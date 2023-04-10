@@ -1,7 +1,9 @@
 ---
+import { ThemeToggle } from "../components/ThemeToggle";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="test">
-    hi
+	<ThemeToggle client:load />
+	<div class="text-primary font-bold">hi</div>
 </Layout>

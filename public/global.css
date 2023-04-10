@@ -1,0 +1,18 @@
+* {
+	transition: 0.2s;
+}
+
+:root {
+	--text: #000000;
+	--bg: #ffffff;
+}
+
+.dark {
+	--text: #ffffff;
+	--bg: #000000;
+}
+
+.neon {
+	--text: #FFA3FD;
+	--bg: #191825;
+}
