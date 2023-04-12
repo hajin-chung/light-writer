@@ -1,6 +1,6 @@
 # Light Writer
 
-simple web novel platform for anybody to right
+simple web novel platform for anybody to write
 
 ## features
 
