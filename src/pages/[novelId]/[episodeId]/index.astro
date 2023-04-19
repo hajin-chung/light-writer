@@ -1,0 +1,18 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import { getEpisode } from "../../../lib/db";
+
+const { novelId, episodeId } = Astro.params;
+
+if (typeof novelId !== "string" || typeof episodeId !== "string") {
+	return Astro.redirect("/404");
+}
+
+// fetch episode info
+const episode = await getEpisode(episodeId);
+---
+
+<Layout title={episode.title}>
+  {novelId}, {episodeId}
+	{JSON.stringify(episode)}
+</Layout>

@@ -1,7 +1,19 @@
 ---
+import Layout from "../../layouts/Layout.astro";
+import { getNovel } from "../../lib/db";
+
 const { novelId } = Astro.params;
+
+// fetch novel info
+if (typeof novelId !== "string") {
+	return Astro.redirect("/404");
+}
+
+
+const novel = await getNovel(novelId);
 ---
 
-<div>
+<Layout title={novel.title}>
   {novelId}
-</div>
+	{JSON.stringify(novel)}
+</Layout>
