@@ -1,8 +1,8 @@
 import type { ParentComponent } from "solid-js";
 
 type ButtonProps = {
-	class: string;
-	onClick: () => void;
+	class?: string;
+	onClick?: () => void;
 };
 
 export const Button: ParentComponent<ButtonProps> = (props) => {

@@ -1,0 +1,12 @@
+---
+import { GoogleLoginButton } from "../../components/LoginButton";
+import Layout from "../../layouts/Layout.astro";
+
+console.log(import.meta.env.DEV);
+
+---
+
+<Layout title="login">
+	<div>login with other services</div>
+	<GoogleLoginButton client:load />
+</Layout>

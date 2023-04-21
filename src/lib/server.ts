@@ -1,3 +1,6 @@
+// server side functions
+// mainly db queries
+
 import type { Episode, Novel } from "./types"
 
 export const getNovel = async (novelId: string) => {
