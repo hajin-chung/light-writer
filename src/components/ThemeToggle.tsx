@@ -17,7 +17,6 @@ export const ThemeToggle: Component = () => {
 
 	const cycleTheme = () => {
 		const idx = ThemeTypes.findIndex((v) => v === theme());
-		console.log(idx);
 		changeTheme(ThemeTypes[(idx+1) % ThemeTypes.length]);
 	}
 

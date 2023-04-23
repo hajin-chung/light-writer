@@ -18,7 +18,6 @@ export const GoogleLoginButton: Component = () => {
   const clickHandler = () => {
     if (window) {
       window.location.href = oauthEndpoint.href;
-      console.log(oauthEndpoint.href);
     }
   };
 
